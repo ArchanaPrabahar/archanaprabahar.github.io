@@ -1,18 +1,67 @@
-title: Archana Prabahar
+# ===============================
+# Site settings
+# ===============================
+title: Archana Prabhar
+author: Archana Prabhar
 email: archana.prabahar@gmail.com
-description: "Bioinformatics blog on multi-omics, machine learning, and computational biology"
-baseurl: ""
+description: >
+  Bioinformatics and computational biology blog covering
+  multi-omics data analysis, RNA-seq, scRNA-seq, and
+  machine learning applications in genomics.
+
 url: "https://archanaprabahar.github.io"
+baseurl: ""
+
+# ===============================
+# Theme & plugins
+# ===============================
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
-nav:
-  - Home: /
-  - About: /about/
-  - CV: /cv/
-  - Projects: /projects/
-  - Blog: /blog/
+# ===============================
+# Navigation (used by Minima)
+# ===============================
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - cv.md
+
+# ===============================
+# Sass / CSS
+# ===============================
 sass:
   sass_dir: assets/css
   style: compressed
+
+# ===============================
+# Markdown settings
+# ===============================
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# ===============================
+# Blog settings
+# ===============================
+permalink: /blog/:year/:month/:day/:title/
+
+# ===============================
+# Social links (SEO + Minima)
+# ===============================
+github_username: archanaprabahar
+linkedin_username: archanaprabahar
+
+# ===============================
+# Defaults
+# ===============================
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Archana Prabhar
