@@ -2,34 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    {% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}
+  </title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="site-header">
   <nav class="site-nav">
+
+    <!-- Site title -->
     <div class="site-title">
-      <a href="{{ '/' | relative_url }}">Archana Prabhar</a>
+      <a href="{{ '/' | relative_url }}">
+        Archana <span style="opacity:.7">Prabhar</span>
+      </a>
     </div>
-    <div>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/projects/' | relative_url }}">Projects</a>
-      <a href="{{ '/cv/' | relative_url }}">CV</a>
+
+    <!-- Navigation -->
+    <div class="site-links">
       <a href="{{ '/' | relative_url }}">Blog</a>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/cv/' | relative_url }}">CV</a>
     </div>
+
   </nav>
 </header>
 
+<!-- ================= HERO (Blog Home Only) ================= -->
+{% if page.url == "/" %}
+<section class="hero">
+  <div class="container">
+    <h1>Bioinformatics & Machine Learning</h1>
+    <p>
+      Writing about <strong>multi-omics</strong>, <strong>RNA-seq</strong>,
+      <strong>scRNA-seq</strong>, and <strong>machine learning</strong>
+      for biological discovery.
+    </p>
+  </div>
+</section>
+{% endif %}
+
+<!-- ================= MAIN CONTENT ================= -->
 <main class="container">
   {{ content }}
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
-  © {{ site.time | date: "%Y" }} Archana Prabhar
+  <p>
+    © {{ site.time | date: "%Y" }} Archana Prabhar · Bioinformatics & ML
+  </p>
 </footer>
 
 </body>
