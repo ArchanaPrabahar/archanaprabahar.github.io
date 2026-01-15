@@ -1,11 +1,20 @@
-# Archana Prabahar GitHub Pages Blog
+# Archana Prabhar — Bioinformatics & Machine Learning
 
-Welcome to my personal bioinformatics blog! Here I share:
+This repository hosts my **personal GitHub Pages blog**, where I write about
+computational approaches for biological data analysis.
 
-- Insights on **multi-omics data analysis**  
-- Machine learning and deep learning applications in genomics  
-- Computational biology projects and pipelines  
+### Topics I write about
+- **Multi-omics data analysis** (RNA-seq, scRNA-seq, ATAC-seq, proteomics)
+- **Machine learning & deep learning** in genomics
+- **Computational biology pipelines** and reproducible workflows
+- Research notes, tutorials, and project highlights
 
-Visit my blog: [https://archanaprabahar.github.io](https://archanaprabahar.github.io)  
-Explore my CV: [CV](https://archanaprabahar.github.io/cv/)  
-Learn more about my projects: [Projects](https://archanaprabahar.github.io/projects/)
+### 🔗 Explore
+- 🌐 **Blog**: https://archanaprabahar.github.io  
+- 📄 **Curriculum Vitae**: https://archanaprabahar.github.io/cv/  
+- 🧬 **Projects**: https://archanaprabahar.github.io/projects/
+
+---
+
+This site is built using **GitHub Pages** and **Jekyll** and serves as a platform
+for sharing research ideas, methods, and open-source work.
