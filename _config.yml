@@ -1,0 +1,15 @@
+title: Archana Prabahar
+email: archana.prabahar@gmail.com
+description: "Bioinformatics blog on multi-omics, machine learning, and computational biology"
+baseurl: ""
+url: "https://archanaprabahar.github.io"
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Navigation menu
+nav:
+  - Home: /
+  - About: /about
+  - Projects: /projects
+  - Blog: /blog
