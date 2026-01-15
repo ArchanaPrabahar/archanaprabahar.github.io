@@ -1,19 +1,23 @@
-// main.scss
-
-// Colors
-$primary-color: #ff6f61;   // bright coral
+// ---------------------------
+// COLORS
+// ---------------------------
+$primary-color: #ff6f61;   // coral
 $secondary-color: #4db6ac; // teal
-$background-color: #fdf6f0; // light cream
+$background-color: #fdf6f0; // cream
 $text-color: #333;
 
-// Body styling
+// ---------------------------
+// BODY
+// ---------------------------
 body {
   background-color: $background-color;
   color: $text-color;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-// Links
+// ---------------------------
+// LINKS
+// ---------------------------
 a {
   color: $primary-color;
   text-decoration: none;
@@ -22,21 +26,26 @@ a:hover {
   color: $secondary-color;
 }
 
-// Header styling
+// ---------------------------
+// HEADERS
+// ---------------------------
 h1, h2, h3, h4 {
   color: $primary-color;
   font-weight: bold;
 }
 
-// Cards for Projects
+// ---------------------------
+// PROJECT & CV CARDS
+// ---------------------------
 .card {
   background-color: white;
   border-radius: 15px;
   padding: 20px;
   margin: 15px 0;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
