@@ -13,3 +13,6 @@ nav:
   - CV: /cv/
   - Projects: /projects/
   - Blog: /blog/
+sass:
+  sass_dir: assets/css
+  style: compressed
